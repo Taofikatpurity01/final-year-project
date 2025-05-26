@@ -7,11 +7,11 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import Image from 'next/image';
-import booking from './../../../public/Images/booking.jpg'
-import shedule from './../../../public/Images/schedule.jpg'
-import eco from './../../../public/Images/eco.jpg'
-import track from './../../../public/Images/track.jpg'
-import data from './../../../public/Images/data.jpg'
+import booking from './../../../../public/Images/booking.jpg'
+import shedule from './../../../../public/Images/schedule.jpg'
+import eco from './../../../../public/Images/eco.jpg'
+import track from './../../../../public/Images/track.jpg'
+import data from './../../../../public/Images/data.jpg'
 
 const Whatwedo = () => {
   return (
@@ -45,7 +45,7 @@ Our service connects users, waste collectors, and administrators through a centr
       onSlideChange={() => console.log('slide change')}
     >
       <SwiperSlide className='w-[26%] m-auto'> 
-       <div className='flex flex-col gap-6 p-6 shadow-md rounded-md bg-white hover:animate-bounce '>
+       <div className='flex flex-col gap-6 p-6 shadow-md rounded-md bg-white  '>
         <div className='rounded-md '>
         <Image src={booking} alt=""  className='rounded-md h-[200px]'/> 
         </div>
@@ -58,7 +58,7 @@ Our service connects users, waste collectors, and administrators through a centr
        </div>
       </SwiperSlide>
       <SwiperSlide className='w-[26%] m-auto'> 
-      <div className='flex flex-col gap-6 p-6 shadow-md rounded-md bg-white hover:animate-bounce'>
+      <div className='flex flex-col gap-6 p-6 shadow-md rounded-md bg-white '>
         <div className='rounded-md '>
         <Image src={data} alt=""  className='rounded-md h-[200px]'/> 
         </div>
@@ -71,7 +71,7 @@ Our service connects users, waste collectors, and administrators through a centr
        </div>
       </SwiperSlide>
       <SwiperSlide className='w-[26%] m-auto'> 
-      <div className='flex flex-col gap-6 p-6 shadow-md rounded-md bg-white hover:animate-bounce'>
+      <div className='flex flex-col gap-6 p-6 shadow-md rounded-md bg-white '>
         <div className='rounded-md '>
         <Image src={shedule} alt=""  className='rounded-md h-[200px]'/> 
         </div>
@@ -84,7 +84,7 @@ Our service connects users, waste collectors, and administrators through a centr
        </div>
 </SwiperSlide>
 <SwiperSlide className='w-[26%] m-auto'> 
-<div className='flex flex-col gap-6 p-6 shadow-md rounded-md bg-white hover:animate-bounce'>
+<div className='flex flex-col gap-6 p-6 shadow-md rounded-md bg-white '>
         <div className='rounded-md '>
         <Image src={track} alt=""  className='h-[200px] rounded-md'/> 
         </div>
@@ -97,7 +97,7 @@ Our service connects users, waste collectors, and administrators through a centr
        </div>
 </SwiperSlide>
       <SwiperSlide className='w-[26%] m-auto'>
-      <div className='flex flex-col gap-6 p-6 shadow-md rounded-md bg-white hover:animate-bounce'>
+      <div className='flex flex-col gap-6 p-6 shadow-md rounded-md bg-white '>
         <div className='rounded-md '>
         <Image src={eco} alt=""  className='rounded-md h-[200px]'/> 
         </div>

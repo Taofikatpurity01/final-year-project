@@ -1,7 +1,7 @@
 import React from 'react'
-import Form from './Form'
-import Whatwedo from './Whatwedo'
-import Header from '../Header'
+import Form from './components/Form'
+import Whatwedo from './components/Whatwedo'
+import Header from '../components/Header'
 
 const Page = () => {
   return (

@@ -1,9 +1,9 @@
 import React from "react";
 import Image from "next/image";
-import logo from "./../../public/Images/logo.png";
-import xlogo from './../../public/Images/xlogo.png'
-import fblogo from './../../public/Images/fblogo.png'
-import instalogo from './../../public/Images/instalogo.png'
+import logo from "./../../../public/Images/footerlogo.png";
+import xlogo from './../../../public/Images/xlogo.png'
+import fblogo from './../../../public/Images/fblogo.png'
+import instalogo from './../../../public/Images/instalogo.png'
 
 
 const Footer = () => {

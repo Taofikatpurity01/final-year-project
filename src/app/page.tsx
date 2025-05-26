@@ -1,8 +1,8 @@
 import React from 'react'
-import Header from './Header'
-import Hero  from '@/app/Hero'
-import Recycle from './Recycle'
-import Footer from './Footer'
+import Header from './components/Header'
+import Hero  from '@/app/components/Hero'
+import Recycle from './components/Recycle'
+import Footer from './components/Footer'
 import Image from 'next/image'
 
 const Page = () => {

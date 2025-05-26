@@ -2,9 +2,9 @@
 
 import React from 'react'
 import Image from 'next/image'
-import globe from './../../public/Images/globe.jpg'
-import bulb from'./../../public/Images/bulb.jpg'
-import treebook from './../../public/Images/treebook.jpg'
+import globe from './../../../public/Images/globe.jpg'
+import bulb from'./../../../public/Images/bulb.jpg'
+import treebook from './../../../public/Images/treebook.jpg'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper/modules';
 import 'swiper/css';
