@@ -1,5 +1,6 @@
-@import "tailwindcss";
-@import "flowbite";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;700&display=swap');
+@import "tailwindcss"; 
+@import "flowbite"; 
 @import "swiper/css";
 
 :root {
@@ -12,13 +13,14 @@
   --font-mono: 'Geist Mono', monospace;
 }
 
+
 /* Dark mode overrides */
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
 
 /* @font-face {
