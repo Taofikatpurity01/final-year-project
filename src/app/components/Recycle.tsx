@@ -35,12 +35,12 @@ const Recycle = () => {
                 The Smart Waste Management System
               </span>
               is our innovative contribution to promoting sustainability and
-              improving public hygiene using smart solutions. We’re excited to
+              improving public hygiene using smart solutions. We are excited to
               have you here. Our goal is simple — to revolutionize the way we
               manage waste using smart technology. With intelligent bins,
-              real-time monitoring, and eco-friendly solutions, we’re making
+              real-time monitoring, and eco-friendly solutions, we are making
               waste disposal cleaner, smarter, and more efficient. Together,
-              let’s build a cleaner environment and a more sustainable future.
+              let us build a cleaner environment and a more sustainable future.
               one smart bin at a time.
             </p>
           </div>
@@ -62,7 +62,7 @@ const Recycle = () => {
             communities, institutions, and cities with intelligent solutions
             that promote cleaner environments, reduce waste-related challenges,
             and encourage eco-conscious living. By combining technology with
-            environmental responsibility, we’re committed to building a smarter,
+            environmental responsibility, we are committed to building a smarter,
             greener future — one bin at a time.
           </p>
         </div>
@@ -73,7 +73,7 @@ const Recycle = () => {
           <p className=" text-xl pt-6">
             At Smart Waste Management System, our vision is to transform how
             communities handle waste—moving towards a cleaner, greener, and
-            smarter future. We believe waste management shouldn’t be a burden
+            smarter future. We believe waste management shouldnot be a burden
             but an opportunity to innovate, educate, and elevate the quality of
             life for everyone. We aim to:
           </p>
@@ -92,7 +92,7 @@ const Recycle = () => {
             </li>
           </ul>
           <p className="text-xl">
-            Together, let’s reimagine waste—not as a problem, but as a chance to
+            Together, let is reimagine waste—not as a problem, but as a chance to
             make the world better
           </p>
         </div>
@@ -103,8 +103,8 @@ const Recycle = () => {
       <div className="bg-[wheat] px-6 py-14">
         <p className="text-4xl font-bold text-center">Why Choose Us</p>
         <p className="text-xl text-center w-[80%] m-auto p-6 ">
-          At Smart Waste Management System, we’re committed to creating a
-          cleaner, more sustainable world through innovative technology. Here’s
+          At Smart Waste Management System, we are committed to creating a
+          cleaner, more sustainable world through innovative technology. Here is
           why you should choose us
         </p>
         <div className="grid grid-cols-3 gap-4 p-6 w-[90%] m-auto">
@@ -133,7 +133,7 @@ const Recycle = () => {
           <div className="px-6 py-10 bg-white flex flex-col gap-6  rounded-sm hover:bg-black hover:text-white ">
             <p className="font-bold text-center text-xl">Cost-Effective</p>
             <p className="text-center">
-              By using our smart system, you’ll reduce the costs associated with
+              By using our smart system, you will reduce the costs associated with
               waste disposal. Our solution streamlines the process, saving both
               time and money, while also contributing to long-term environmental
               benefits.
@@ -164,7 +164,7 @@ const Recycle = () => {
               Innovative & Future-Ready
             </p>
             <p className="text-center">
-              We’re always evolving to meet the needs of the future. Our
+              We are always evolving to meet the needs of the future. Our
               technology adapts to new challenges and regulations, so you can
               rest assured that your waste management solution is always up to
               date.
@@ -199,7 +199,7 @@ const Recycle = () => {
               alt=""
               className="h-[360px] w-[200px] mx-auto "
             />
-            <p className="text-center font-bold pb-11 mb-7">OLAMIDElamide DAVID ODUNUGA</p>
+            <p className="text-center font-bold pb-11 mb-7">OLAMIDE DAVID ODUNUGA</p>
           </div>
           <div className="flex flex-col gap-6 bg-[whitesmoke] rounded-b-lg ">
             <Image
@@ -212,9 +212,14 @@ const Recycle = () => {
         </div>
       </div>
       <div className="rounded-full py-3 bg-[green] text-white test-xl w-[14%] mx-auto flex justify-center my-6 outline-offset-2 outline-[green] outline-2 ">
-        <Link href="/service">
-          <button>Our Service</button>
-        </Link>
+       <a
+  href="https://api-swms.onrender.com/public/register"
+  target="_blank"
+  rel="noopener noreferrer"
+  // className="rounded-full py-3 bg-[green] text-white text-2xl w-[14%] mx-auto flex justify-center mt-6 outline-offset-2 outline-[green] outline-2"
+>
+  Register Bin
+</a>
       </div>
     </div>
   );

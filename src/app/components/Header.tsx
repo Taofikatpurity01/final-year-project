@@ -70,7 +70,7 @@ const Header = () => {
             </li>
             <li>
               <Link 
-                href='/service' 
+                href='' 
                 className={`hover:text-blue-600 transition-colors duration-200 cursor-pointer relative ${
                   isActive('/service') 
                     ? 'text-blue-600 font-semibold' 

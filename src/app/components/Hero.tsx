@@ -50,11 +50,14 @@ const Hero = () => {
         Discover the next generation of waste management. Our smart bins use cutting-edge tech to reduce litter, promote recycling, and keep your environment clean - effortlessly.
         </p>
         <div  className='rounded-full py-3 bg-[green] text-white test-2xl w-[14%] mx-auto flex justify-center mt-6 outline-offset-2 outline-[green] outline-2'>
-          <Link href='/service'>
-        <button>
-          Our Service
-        </button>
-        </Link>
+          <a
+  href="https://api-swms.onrender.com/public/register"
+  target="_blank"
+  rel="noopener noreferrer"
+  // className="rounded-full py-3 bg-[green] text-white text-2xl w-[14%] mx-auto flex justify-center mt-6 outline-offset-2 outline-[green] outline-2"
+>
+  Register Bin
+</a>
         </div>
       </div>
       </div></SwiperSlide>
@@ -62,20 +65,23 @@ const Hero = () => {
       <Image src={bulb} alt="bulb"  /> 
       <div className='absolute top-70 flex flex-col gap-4'>
         <p className='font-black text-7xl text-center text-white'>
-        Who It's For
+        Who It is For
         </p>
         <p className='text-4xl font-bold text-center text-white'>
         Clean Tech for a Greener Tomorrow
         </p>
         <p className='text-center text-2xl text-[#ffffffa8] w-[60%] mx-auto'>
-        Whether you're managing a school, park, corporate space, or urban center — our smart wastebins adapt to any environment with ease.
+        Whether you are managing a school, park, corporate space, or urban center — our smart wastebins adapt to any environment with ease.
         </p>
         <div  className='rounded-full py-3 bg-[green] text-white test-2xl w-[14%] mx-auto flex justify-center mt-6 outline-offset-2 outline-[green] outline-2'>
-        <Link href='/service'>
-        <button>
-          Our Service
-        </button>
-        </Link>
+       <a
+  href="https://api-swms.onrender.com/public/register"
+  target="_blank"
+  rel="noopener noreferrer"
+  // className="rounded-full py-3 bg-[green] text-white text-2xl w-[14%] mx-auto flex justify-center mt-6 outline-offset-2 outline-[green] outline-2"
+>
+  Register Bin
+</a>
           
         </div>
       </div>
@@ -95,11 +101,14 @@ const Hero = () => {
         Save Your community, Save Your planet
         </p>
         <div  className='rounded-full py-3 bg-[green] text-white test-2xl w-[14%] mx-auto flex justify-center mt-6 outline-offset-2 outline-[green] outline-2'>
-        <Link href='/service'>
-        <button>
-          Our Service
-        </button>
-        </Link>
+       <a
+  href="https://api-swms.onrender.com/public/register"
+  target="_blank"
+  rel="noopener noreferrer"
+  // className="rounded-full py-3 bg-[green] text-white text-2xl w-[14%] mx-auto flex justify-center mt-6 outline-offset-2 outline-[green] outline-2"
+>
+  Register Bin
+</a>
           
         </div>
       </div>
