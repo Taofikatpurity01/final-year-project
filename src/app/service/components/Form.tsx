@@ -1,6 +1,7 @@
 'use client'
 
 import React, { useState, useEffect } from 'react';
+import { useCallback } from 'react';
 
 // Type definitions
 interface Bin {
@@ -119,30 +120,56 @@ const SmartWasteForm = () => {
     </svg>
   );
 
-  const showMessage = (text: string, type: 'success' | 'error' | 'info' = 'info') => {
+  // const showMessage = (text: string, type: 'success' | 'error' | 'info' = 'info') => {
+  //   setMessage(text);
+  //   setMessageType(type);
+  //   setTimeout(() => setMessage(''), 5000);
+  // };
+  
+const showMessage = useCallback(
+  (text: string, type: 'success' | 'error' | 'info' = 'info') => {
     setMessage(text);
     setMessageType(type);
     setTimeout(() => setMessage(''), 5000);
-  };
+  },
+  [setMessage, setMessageType] // dependencies used inside
+);
 
   // Fetch all bins
-  const fetchAllBins = async () => {
-    setLoading(true);
-    try {
-      const response = await fetch(`${API_BASE}/bins`);
-      if (response.ok) {
-        const data: Bin[] = await response.json();
-        setBins(data);
-        showMessage(`Loaded ${data.length} bins successfully`, 'success');
-      } else {
-        showMessage('Failed to fetch bins', 'error');
-      }
-    } catch (error) {
-      console.error('Error fetching bins:', error);
-      showMessage('Error connecting to server', 'error');
+  // const fetchAllBins = async () => {
+  //   setLoading(true);
+  //   try {
+  //     const response = await fetch(`${API_BASE}/bins`);
+  //     if (response.ok) {
+  //       const data: Bin[] = await response.json();
+  //       setBins(data);
+  //       showMessage(`Loaded ${data.length} bins successfully`, 'success');
+  //     } else {
+  //       showMessage('Failed to fetch bins', 'error');
+  //     }
+  //   } catch (error) {
+  //     console.error('Error fetching bins:', error);
+  //     showMessage('Error connecting to server', 'error');
+  //   }
+  //   setLoading(false);
+  // };
+  const fetchAllBins = useCallback(async () => {
+  setLoading(true);
+  try {
+    const response = await fetch(`${API_BASE}/bins`);
+    if (response.ok) {
+      const data: Bin[] = await response.json();
+      setBins(data);
+      showMessage(`Loaded ${data.length} bins successfully`, 'success');
+    } else {
+      showMessage('Failed to fetch bins', 'error');
     }
-    setLoading(false);
-  };
+  } catch (error) {
+    console.error('Error fetching bins:', error);
+    showMessage('Error connecting to server', 'error');
+  }
+  setLoading(false);
+}, [API_BASE, setLoading, setBins, showMessage]);
 
   // Get specific bin
   const getBinById = async () => {
@@ -188,7 +215,7 @@ const SmartWasteForm = () => {
 
       if (response.ok) {
         const data: { success: boolean; message: string; data: Bin } = await response.json();
-        showMessage('Bin added successfully', 'success');
+        showMessage(data.message || 'Bin added successfully', 'success');
         setNewBin({ location: '', fillLevel: 0, needsCollection: false });
         fetchAllBins(); // Refresh the list
       } else {
@@ -278,9 +305,10 @@ const SmartWasteForm = () => {
     }
   };
 
+  
   useEffect(() => {
     fetchAllBins();
-  }, []);
+  }, [fetchAllBins]);
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-8 bg-gray-50 min-h-screen">
@@ -505,7 +533,7 @@ const SmartWasteForm = () => {
             <h3 className="text-lg font-semibold text-gray-800 mb-4">All Bins Summary ({bins.length})</h3>
             <div className="max-h-64 overflow-y-auto space-y-2">
               {bins.length === 0 ? (
-                <p className="text-gray-500 text-center py-4">No bins loaded. Click "Refresh All Bins" to load data.</p>
+                <p className="text-gray-500 text-center py-4">No bins loaded. Click Refresh All Bins to load data.</p>
               ) : (
                 bins.map((bin) => (
                   <div

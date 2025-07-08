@@ -1,13 +1,13 @@
 import React from "react";
 import Image from "next/image";
-import recycle from "./../../../public/Images/recycle.png";
+// import recycle from "./../../../public/Images/recycle.png";
 import david from "./../../../public/Images/david.png";
 import vission from "./../../../public/Images/ourvission.png";
 import waste from "./../../../public/Images/waste.png";
 import wale from "./../../../public/Images/wale.png";
 import taofikat from "./../../../public/Images/taofikat.png";
 import aboutbin from "./../../../public/Images/smart.svg";
-import Link from "next/link";
+// import Link from "next/link";
 
 const Recycle = () => {
   return (
@@ -115,7 +115,7 @@ const Recycle = () => {
             <p className="text-center">
               Our waste management system combines advanced technology with
               eco-friendly practices, helping reduce waste and improve recycling
-              efficiency. We're not just about managing waste—we're about
+              efficiency. We are not just about managing waste—we are about
               transforming the future.
             </p>
           </div>
@@ -124,7 +124,7 @@ const Recycle = () => {
               Easy-to-Use Interface
             </p>
             <p className="text-center">
-              Our platform is designed with you in mind. Whether you're a
+              Our platform is designed with you in mind. Whether you are a
               homeowner, business owner, or city planner, our simple, intuitive
               interface makes it easy to track, manage, and optimize waste
               collection.
@@ -154,7 +154,7 @@ const Recycle = () => {
               Eco-Friendly Impact
             </p>
             <p className="text-center">
-              We are passionate about the planet. By choosing our system, you're
+              We are passionate about the planet. By choosing our system, you are
               contributing to a greener world. Together, we can reduce carbon
               footprints and promote responsible waste management practices.
             </p>

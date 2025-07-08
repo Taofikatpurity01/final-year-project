@@ -13,7 +13,7 @@ const Header = () => {
   const pathname = usePathname()
   
   // Function to check if link is active
-  const isActive = (path) => {
+  const isActive = (path:  string) => {
     if (path === '/') {
       return pathname === '/'
     }
